@@ -2,6 +2,13 @@
 
 Template for Callisto service projects
 
+# Callisto setup
+Within the template you will see 'REPLACE-SERVICE-NAME'. Every occurrence of these needs to be
+replaced with the new service name.
+
+Within application.properties & Dockerfile you will find 'REPLACE-SERVICE-PORT'. This needs to be
+replaced with the port the new service is exposing.
+
 ## Drone Secrets
 
 - `drone_token` - ??
@@ -23,7 +30,14 @@ Template for Callisto service projects
 ## Variables to replace
 
 REPLACE-SERVICE-NAME
+<<<<<<< HEAD
 
 REPLACE-LOCAL-PORT
 
 REPLACE-QUAY-REPO
+=======
+REPLACE-QUAY-REPO
+
+
+
+>>>>>>> 638fbe9bbd85fe613bc848f734f6a4d15d211b9b
