@@ -1,4 +1,5 @@
 # callisto-service-template
+
 Template for Callisto service projects
 
 # Callisto setup
@@ -9,6 +10,7 @@ Within application.properties & Dockerfile you will find 'REPLACE-SERVICE-PORT'.
 replaced with the port the new service is exposing.
 
 ## Drone Secrets
+
 - `drone_token` - ??
 - `quay_robot_name` - ??
 - `quay_robot_token` - ??
@@ -23,12 +25,19 @@ replaced with the port the new service is exposing.
 - `prod_kube_token` - not pr
 - `slack_webhook_url`
 - `slack_urgent_webhook_url`
-- 
+-
 
 ## Variables to replace
-  
+
 REPLACE-SERVICE-NAME
+<<<<<<< HEAD
+
+REPLACE-LOCAL-PORT
+
+REPLACE-QUAY-REPO
+=======
 REPLACE-QUAY-REPO
 
 
 
+>>>>>>> 638fbe9bbd85fe613bc848f734f6a4d15d211b9b
