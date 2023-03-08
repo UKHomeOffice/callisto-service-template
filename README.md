@@ -1,7 +1,9 @@
 # callisto-service-template
+
 Template for Callisto service projects
 
 ## Drone Secrets
+
 - `drone_token` - ??
 - `quay_robot_name` - ??
 - `quay_robot_token` - ??
@@ -16,9 +18,12 @@ Template for Callisto service projects
 - `prod_kube_token` - not pr
 - `slack_webhook_url`
 - `slack_urgent_webhook_url`
-- 
+-
 
 ## Variables to replace
-  
+
 REPLACE-SERVICE-NAME
+
+REPLACE-LOCAL-PORT
+
 REPLACE-QUAY-REPO
