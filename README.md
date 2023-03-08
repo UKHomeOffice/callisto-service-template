@@ -16,6 +16,16 @@ replaced as described in the table below.
 | REPLACE-LOCAL-PORT   | the port for local dev               | docker-compose.yml                    | 50100                        |
 | REPLACE-QUAY-REPO    | the repo name in Quay                | .drone.yml                            | callisto-timecard-restapi    |
 
+## Rename java package/application name
+
+Rename default package `uk.gov.homeoffice.digital.sas.callistoservice` to suit your requirements both under `main` and `test`
+
+Rename and modify application `CallistoServiceApplication` to suit your requirements
+
+## Setup SonarCloud project
+
+Follow steps [here](https://collaboration.homeoffice.gov.uk/pages/viewpage.action?pageId=206901590) 
+
 ## Drone secrets
 
 The following secrets will need adding to Drone. Details for finding secrets are in [Confluence](https://collaboration.homeoffice.gov.uk/display/EAHW/How+to).

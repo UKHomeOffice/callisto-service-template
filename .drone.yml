@@ -133,9 +133,9 @@ steps:
         -Dsonar.host.url=$${SONAR_HOST}
         -Dsonar.login=$${SONAR_TOKEN}
         -Dsonar.organization=ukhomeoffice
-        -Dsonar.projectKey=REPLACE-SERVICE-NAME #???
+        -Dsonar.projectKey=REPLACE-SERVICE-NAME
         -Dsonar.branch.name=$DRONE_BRANCH
-        -Dsonar.projectName=REPLACE-SERVICE-NAME #???
+        -Dsonar.projectName=REPLACE-SERVICE-NAME
         -Dsonar.qualitygate.wait=true
     when:
       event:

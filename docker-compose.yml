@@ -19,7 +19,7 @@ services:
       - "5005:5005"
     volumes:
       - ./:/app
-      - $HOME/.m2:/Users/1000/.m2 # Required for jparest dependencies (artifactory)
+      - $HOME/.m2:/Users/1000/.m2 # Required for artifactory dependencies
     environment:
       - HOME=/Users/1000
       - MAVEN_USER_HOME=/Users/1000/.m2
