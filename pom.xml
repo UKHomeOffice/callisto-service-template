@@ -14,7 +14,7 @@
 	<name>REPLACE-SERVICE-NAME</name>
 	<description>Template for callisto services</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>17</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <sonar.language>java</sonar.language>
