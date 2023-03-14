@@ -190,8 +190,8 @@ steps:
     settings:
       namespace: callisto-dev
       mode: upgrade
-      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
-      chart: test/callisto-base-service
+      add_repos: helm_repo=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: helm_repo/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
         - branch=${DRONE_SOURCE_BRANCH%%/*}
@@ -232,8 +232,8 @@ steps:
     settings:
       namespace: callisto-dev
       mode: upgrade
-      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
-      chart: test/callisto-base-service
+      add_repos: helm_repo=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: helm_repo/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
@@ -272,8 +272,8 @@ steps:
     settings:
       namespace: callisto-test
       mode: upgrade
-      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
-      chart: test/callisto-base-service
+      add_repos: helm_repo=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: helm_repo/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
@@ -310,8 +310,8 @@ steps:
     settings:
       namespace: callisto-prod
       mode: upgrade
-      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
-      chart: test/callisto-base-service
+      add_repos: helm_repo=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: helm_repo/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
