@@ -19,15 +19,15 @@ steps:
     commands:
       - hadolint Dockerfile
 
-  - name: lint_helm_files
-    image: pelotech/drone-helm3
-    settings:
-      mode: lint
-      chart: ./helm
-      values_files:
-        - ./helm/values/dev-values.yaml
-        - ./helm/values/test-values.yaml
-        - ./helm/values/prod-values.yaml
+#  - name: lint_helm_files
+#    image: pelotech/drone-helm3
+#    settings:
+#      mode: lint
+#      chart: ./helm
+#      values_files:
+#        - ./helm/values/dev-values.yaml
+#        - ./helm/values/test-values.yaml
+#        - ./helm/values/prod-values.yaml
 
 ---
 kind: pipeline
@@ -190,7 +190,8 @@ steps:
     settings:
       namespace: callisto-dev
       mode: upgrade
-      chart: ./helm
+      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: test/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
         - branch=${DRONE_SOURCE_BRANCH%%/*}
@@ -231,7 +232,8 @@ steps:
     settings:
       namespace: callisto-dev
       mode: upgrade
-      chart: ./helm
+      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: test/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
@@ -270,7 +272,8 @@ steps:
     settings:
       namespace: callisto-test
       mode: upgrade
-      chart: ./helm
+      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: test/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
@@ -307,7 +310,8 @@ steps:
     settings:
       namespace: callisto-prod
       mode: upgrade
-      chart: ./helm
+      add_repos: test=https://ukhomeoffice.github.io/callisto-helm-charts/
+      chart: test/callisto-base-service
       values:
         - image.tag=${DRONE_COMMIT_SHA}
       values_files:
