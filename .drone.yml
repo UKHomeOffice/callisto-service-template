@@ -74,8 +74,8 @@ steps:
       DRONE_TOKEN:
         from_secret: drone_token
     commands:
-      - chmod +x ./pipeline-scripts/check-build-promotion.sh
-      - ./pipeline-scripts/check-build-promotion.sh
+      - chmod +x ./bin/pipeline-scripts/check-build-promotion.sh
+      - ./bin/pipeline-scripts/check-build-promotion.sh
 
 ---
 kind: pipeline
