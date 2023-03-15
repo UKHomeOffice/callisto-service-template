@@ -191,7 +191,7 @@ steps:
       kube_certificate:
         from_secret: notprod_kube_api_certificate
       kube_api_server:
-        from_secret: not_prod_kube_api_url
+        from_secret: notprod_kube_api_url
       kube_token:
         from_secret: dev_kube_token
 
@@ -232,7 +232,7 @@ steps:
       kube_certificate:
         from_secret: notprod_kube_api_certificate
       kube_api_server:
-        from_secret: not_prod_kube_api_url
+        from_secret: notprod_kube_api_url
       kube_token:
         from_secret: dev_kube_token
 
@@ -272,7 +272,7 @@ steps:
       kube_certificate:
         from_secret: notprod_kube_api_certificate
       kube_api_server:
-        from_secret: not_prod_kube_api_url
+        from_secret: notprod_kube_api_url
       kube_token:
         from_secret: test_kube_token
 
