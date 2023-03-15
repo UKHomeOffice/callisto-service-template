@@ -1,5 +1,5 @@
 image:
-  repository: quay.io/ukhomeofficedigital/REPLACE-SERVICE-NAME
+  repository: quay.io/ukhomeofficedigital/REPLACE-QUAY-REPO
   tag: latest
   pullPolicy: Always
 
