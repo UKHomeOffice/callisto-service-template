@@ -39,7 +39,7 @@ The following secrets will need adding to Drone. Details for finding secrets are
 - `sonar_cloud_host`
 - `sonar_cloud_token`
 - `notprod_kube_api_certificate`
-- `not_prod_kube_api_url`
+- `notprod_kube_api_url`
 - `dev_kube_token`
 - `test_kube_token` - not pr enabled
 - `prod_kube_api_certificate` - not pr enabled
