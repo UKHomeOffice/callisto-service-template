@@ -18,6 +18,11 @@ replaced as described in the table below.
 | REPLACE-TOPIC-NAME     | the kafka topic name                 | helm value files                      | callisto-timecard-timeentries|
 | REPLACE-KAFKA-IDENTITY | the kafka msk_identity               | helm value files                      | timecard-restapi|
 
+Within this service there is a script this will replace all the placehoders with the values the user inputs.
+
+To execute please run `./bin/set-up-service.sh`
+
+The service name is mandatory but all others can be skipped if you wish.
 
 ## Rename java package/application name
 
